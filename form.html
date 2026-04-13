@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulir - PMB Universitas Wakanda Forever</title>
+  <link rel="icon" type="img/png" href="asset/img/image copy.png" sizes="16x16"/>
+  <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎓 Penerimaan Calon Mahasiswa Baru (Mandiri)</h1>
+    <p>Universitas Wakanda Forever &mdash; Tahun Ajaran 2027/2028</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="alur.html">Alur Pendaftaran</a>
+    <a href="form.html" class="active">Isi Formulir</a>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Formulir Biodata Calon Mahasiswa</h2>
+      <p>Mohon isi data berikut dengan benar sesuai dengan dokumen asli.</p>
+
+      <form onsubmit="return false;">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap Sesuai Ijazah/Akta:</label>
+          <input
+            type="text"
+            id="nama"
+            placeholder="Cth: Reva Adinta Nasyiah"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nik">Nomor Induk Kependudukan (NIK – 16 Digit):</label>
+          <input
+            type="number"
+            id="nik"
+            placeholder="16 Digit NIK"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="jalur">Jalur Pendaftaran:</label>
+          <select id="jalur">
+            <option value="">-- Pilih Jalur --</option>
+            <option value="Mandiri Gelombang 1">Mandiri Gelombang 1</option>
+            <option value="Mandiri Gelombang 2">Mandiri Gelombang 2</option>    
+          </select>
+        </div>
+
+        <button type="button" class="btn-submit" onclick="kirimPendaftaran()">
+          Kirim Pendaftaran
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2027 Universitas Wakanda Forever. Terakreditasi A.
+  </footer>
+
+  <div id="toast"></div>
+  <script src="asset/javascript/script.js"></script>
+
+</body>
+</html>
